@@ -25,3 +25,6 @@ This project was created using mostly recycled hardware from multiple sources to
 | 3.Raspberry Pi 3 B+ | Pi Cluster | This will be one of the three Raspberry Pi's in my cluster used for resource sharing and running services across my network. |
 | 4.Raspberry Pi 3 B+ | Pi Cluster | This will be one of the three Raspberry Pi's in my cluster used for resource sharing and running services across my network. |
 | 6x 500GB Seagate HDD | NAS Mass Sotrage | This will be used in a RAID 5 configuration and will store data from across my home and will be used to store logs for my SIEM |
+
+### Network Diagram
+The Following is how I believe the network should function logically.
