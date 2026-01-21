@@ -2,9 +2,9 @@
 This homelab is a self-hosted infrastructure environment designed to build and demonstrate practical skills in systems administration, networking, storage, and virtualization. It functions as both a learning platform and a production-style environment, emphasizing reliability, documentation, and iterative improvement rather than one-off experiments.
 
 ## The Problem
-The idea of starting this lab was to give myself a way of applying the skills that I learned from my collection of CompTIA certifications. 
+The idea of starting this lab was to give myself a way of applying the skills that I learned from my collection of CompTIA certifications. I also wanted to use this as a proof of knowledge and skill for possible employeers.
 
-A list of the skills that are related to this project are as listed:
+Skills practiced by certification:
 * CompTIA A+
   * Foundational IT Operations
 * CompTIA Network+
