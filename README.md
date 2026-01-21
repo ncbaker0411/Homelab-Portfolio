@@ -1,2 +1,2 @@
 # Homelab-Portfolio
-This is a repository for documenting my experience and findings while working on setting up and administrating my homelab.
+This homelab is a self-hosted infrastructure environment designed to build and demonstrate practical skills in systems administration, networking, storage, and virtualization. It functions as both a learning platform and a production-style environment, emphasizing reliability, documentation, and iterative improvement rather than one-off experiments.
