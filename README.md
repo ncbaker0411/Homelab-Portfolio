@@ -1,6 +1,15 @@
 # Homelab-Portfolio
 This homelab is a self-hosted infrastructure environment designed to build and demonstrate practical skills in systems administration, networking, storage, and virtualization. It functions as both a learning platform and a production-style environment, emphasizing reliability, documentation, and iterative improvement rather than one-off experiments.
 
+## The Problem
+The idea of starting this lab was to give myself a way of applying the skills that I learned from my collection of CompTIA certifications. A list of the skills that are related to this project are as listed:
+| CompTIA A+ |
+| Foundational IT Operations |
+| CompTIA Network+ |
+| Network Architecture, DNS, Switching, Traffic Flow, Availablity & Redundancy |
+| CompTIA Security+ |
+| Defence-in-Depth, Monitoring, Detection, Least Privilege, Service Isolation, Risk Management |
+
 ## The Hardware
 This project was created using mostly recycled hardware from multiple sources to reduce e-waste and to breath new life into hardware that would otherwise be trash.
 
