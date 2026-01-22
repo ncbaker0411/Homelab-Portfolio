@@ -17,7 +17,7 @@ This project was created using mostly recycled hardware from multiple sources to
 ### Parts List
 | Part | Description | Notes |
 | --- | --- | --- |
-| Netgear GS308 | Unmanaged Switch | This will be used to push network across the lab. I plan on replacing this with a managed switch once I can aquire one. |
+| TP-Link TL-SG108(PE) | Unmanaged Switch | This will be used to push network across the lab. I plan on replacing this with a managed switch once I can aquire one. |
 | Dell Optiplex 7060 Micro | Primary Pc | Loaded with Ubuntu this will be used to run Kurbenetes, a SIEM, and other programs needed in the function of this lab. |
 | 1.Raspberry Pi 3 B+ | PiHole | This will be used for centralized DNS filterning to remove Ads from my network. |
 | 2.Raspberry Pi 3 B+ | Pi Cluster | This will be one of the three Raspberry Pi's in my cluster used for resource sharing and running services across my network. |
