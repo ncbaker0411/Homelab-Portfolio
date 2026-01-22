@@ -55,3 +55,8 @@ Design Files and Resources
 * [Dell Optiplex Mount](https://www.printables.com/model/1225356-slim-dell-optiplex-mount-for-10-inch-rack-with-key)
 * [Raspberry Pi Dock](https://makerworld.com/en/models/1293865-2u-7-sbc-holder-for-10-rack#profileId-1324551)
 * [Hot Swap Drive Bays](https://makerworld.com/en/models/1446421-10-inch-rack-2u-6-x-3-5-inch-hdd-hot-swap#profileId-2260787)
+
+## Lessons Learned
+This project reinforced that reliability often comes from clarity rather than complexity. Even without advanced features like VLANs or managed switching, a well-organized physical network dramatically improves stability, safety, and confidence when working on live systems.
+
+Structured networking is not just about aesthetics—it is a foundational practice that enables every other system in the lab to operate predictably.
