@@ -26,4 +26,4 @@ This project was created using mostly recycled hardware from multiple sources to
 | 6x 500GB Seagate HDD | NAS Mass Sotrage | This will be used in a RAID 5 configuration and will store data from across my home and will be used to store logs for my SIEM |
 
 ### Network Diagram
-![Network Diagram](Assets/Network Diagram.jpg)
+![Network Diagram](https://github.com/ncbaker0411/Homelab-Portfolio/blob/8fdc8c11b50a2a6a7fd47c7eeab3dd2f6ee33f48/Assets/Network%20Diagram.jpg)
