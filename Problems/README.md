@@ -1,7 +1,7 @@
 # Problems
 Since I started my IT career path, I’ve encountered several specific issues that I wanted to solve in ways that would clearly demonstrate the skills I’ve learned. Inside this folder, I document the problems I faced and how I applied my knowledge of IT systems to resolve them.
 
-## [Structured Networking](https://github.com/ncbaker0411/Homelab-Portfolio/tree/2cb60c8f064a5dafd3ed08300f3f4ff431b48b1d/Problems/Structured-Networking)
+## [Structured Networking](https://github.com/ncbaker0411/Homelab-Portfolio/tree/af63e7e183128e9986b2c1754528a4c620a321fd/Problems/Structured-Networking)
 When I started my homelab, it consisted of a stack of unorganized equipment sourced from piles of e-waste. I wanted to ensure that if I present myself as a professional, my homelab and network reflect that level of organization and care.
 
 ## [DNS Filtering](https://github.com/ncbaker0411/Homelab-Portfolio/tree/2cb60c8f064a5dafd3ed08300f3f4ff431b48b1d/Problems/DNS-Filtering)
