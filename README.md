@@ -17,7 +17,7 @@ This project was created using mostly recycled hardware from multiple sources to
 ### Parts List
 | Part | Description | Notes |
 | --- | --- | --- |
-| TP-Link TL-SG108(PE) | Unmanaged Switch | This will be used to push network across the lab. I plan on replacing this with a managed switch once I can aquire one. |
+| TP-Link TL-SG108 | Unmanaged Switch | This will be used to push network across the lab. I plan on replacing this with a managed switch once I can aquire one. |
 | Dell Optiplex 7060 Micro | Primary Pc | Loaded with Ubuntu this will be used to run Kurbenetes, a SIEM, and other programs needed in the function of this lab. |
 | 1.Raspberry Pi 3 B+ | PiHole | This will be used for centralized DNS filterning to remove Ads from my network. |
 | 2.Raspberry Pi 3 B+ | Pi Cluster | This will be one of the three Raspberry Pi's in my cluster used for resource sharing and running services across my network. |
@@ -26,4 +26,4 @@ This project was created using mostly recycled hardware from multiple sources to
 | 6x 500GB Seagate HDD | NAS Mass Sotrage | This will be used in a RAID 5 configuration and will store data from across my home and will be used to store logs for my SIEM |
 
 ### Network Diagram
-![Network Diagram](https://github.com/ncbaker0411/Homelab-Portfolio/blob/8fdc8c11b50a2a6a7fd47c7eeab3dd2f6ee33f48/Assets/Network%20Diagram.jpg)
+
