@@ -15,3 +15,6 @@ In many small organizations, networks grow organically without structure, leadin
 - Network planning and design
 - IP addressing strategy
 - Infrastructure organization
+
+## Network Diagram
+![Current Network Diagram](https://github.com/ncbaker0411/Homelab-Portfolio/blob/b17cdc101a0af94e11a8398336025b883af8cf6b/Projects/01%20-%20Network%20Design/Network%20Diagram.svg)
