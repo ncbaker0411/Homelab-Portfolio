@@ -20,12 +20,17 @@ The primary goal of this project is to apply and expand upon the knowledge gaine
 - DNS and network services
 - Switching, traffic flow, and segmentation
 - Availability and redundancy concepts
+- Cross-Node Virtual Networking
+- Centralized DNS Resolution
 
 ### CompTIA Security+
 - Monitoring and detection
 - Least privilege and access control
 - Service isolation
 - Risk management and security best practices
+- SIEM Engineering
+- Advanced Telemetry Ingestion
+- Identity & Access Management (IAM)
 
 ---
 
@@ -37,11 +42,12 @@ This project is built primarily using repurposed and recycled hardware to reduce
 
 | Part | Description | Notes |
 | --- | --- | --- |
-| TP-Link TL-SG108 | Unmanaged Switch | Provides basic network connectivity across the lab. Planned upgrade to a managed switch for VLAN and traffic segmentation. |
+| TP-Link TL-SG108E | Unmanaged Switch | Provides basic network connectivity across the lab. Planned upgrade to a managed switch for VLAN and traffic segmentation. |
+| GL.iNet GL-1200 | Router | Acts as the primary lab gateway, separating the homelab network from the main household internet. Configured to handle routing, DHCP, and firewall rules to simulate a secure enterprise edge. |
 | Dell Optiplex 7060 Micro | Virtualization Host | Planned to run a hypervisor (Proxmox) for managing virtual machines and containerized services such as SIEM and infrastructure tools. |
 | Raspberry Pi 3 B+ (x1) | DNS Filtering Node | Currently running Pi-hole for centralized DNS filtering. Planned migration to a containerized deployment for improved management. |
-| Raspberry Pi 3 B+ (x3) | Kubernetes Cluster | Forms a lightweight cluster for experimenting with container orchestration and distributed workloads. |
-| 6x 500GB SSD | NAS Storage | Configured for RAID 5 to provide centralized storage for backups, shared data, and log ingestion for monitoring systems. |
+| Dell Optiplex 7090 Ultra (x3) | Kubernetes Cluster | Forms a cluster for experimenting with container orchestration and distributed workloads. |
+<!-- | 6x 500GB SSD | NAS Storage | Configured for RAID 5 to provide centralized storage for backups, shared data, and log ingestion for monitoring systems. | -->
 
 ---
 
@@ -63,6 +69,14 @@ This project is built primarily using repurposed and recycled hardware to reduce
 - Expanded automation and scripting for deployment and maintenance
 - Update hardware to Managed Switch to work on VLAN configuation
 - Network segmentation via managed switch and VLAN configuration
+
+---
+
+## Verification & Telemetry Collection
+
+---
+
+## Active Attack Simulations (MITRE ATT&CK Mapping)
 
 ---
 
