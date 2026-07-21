@@ -11,10 +11,10 @@ The cluster consists of three physical **Dell OptiPlex 7090 Ultra** nodes manage
 
 | Host / Node | Physical Specs | Dedicated Role | Guest VMs / Containers |
 | :--- | :--- | :--- | :--- |
-| **alpha-node-01** | Dell OptiPlex 7090 | Defensive Monitoring / SIEM | **Wazuh Manager** (Ubuntu Server / Elastic Indexer Stack) |
-| **alpha-node-02** | Dell OptiPlex 7090 | Enterprise Target Infrastructure | **Windows Server 2022** (Domain Controller) & **Windows 10 Pro** |
-| **alpha-node-03** | Dell OptiPlex 7090 | Offensive Security & Auditing | **Kali Linux** (Attack Simulations) |
-| **pve-storage** | Dedicated PC (6x 500GB RAID 5) | Shared Storage & Log Archives | OpenMediaVault / TrueNAS (NFS & SMB Shares) |
+| **alpha-node-01** | Dell OptiPlex 7090 Ultra | Defensive Monitoring / SIEM | **Wazuh Manager** (Ubuntu Server / Elastic Indexer Stack) |
+| **alpha-node-02** | Dell OptiPlex 7090 Ultra | Enterprise Target Infrastructure | **Windows Server 2022** (Domain Controller) & **Windows 10 Pro** |
+| **alpha-node-03** | Dell OptiPlex 7090 Ultra | Offensive Security & Auditing | **Kali Linux** (Attack Simulations) |
+| **pve-storage** | Dell Optiplex 7060 Micro (6x 500GB RAID 5) | Shared Storage & Log Archives | OpenMediaVault / TrueNAS (NFS & SMB Shares) |
 
 ---
 
