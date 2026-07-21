@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <row-0>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>IPsec Driver</Subcategory>
+    <Subcategory GUID>{0CCE9213-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-0>
+  <row-1>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>System Integrity</Subcategory>
+    <Subcategory GUID>{0CCE9212-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-1>
+  <row-2>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Security System Extension</Subcategory>
+    <Subcategory GUID>{0CCE9211-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-2>
+  <row-3>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Security State Change</Subcategory>
+    <Subcategory GUID>{0CCE9210-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-3>
+  <row-4>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Other System Events</Subcategory>
+    <Subcategory GUID>{0CCE9214-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-4>
+  <row-5>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Group Membership</Subcategory>
+    <Subcategory GUID>{0CCE9249-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-5>
+  <row-6>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>User / Device Claims</Subcategory>
+    <Subcategory GUID>{0CCE9247-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-6>
+  <row-7>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Network Policy Server</Subcategory>
+    <Subcategory GUID>{0CCE9243-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-7>
+  <row-8>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Other Logon/Logoff Events</Subcategory>
+    <Subcategory GUID>{0CCE921C-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-8>
+  <row-9>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Special Logon</Subcategory>
+    <Subcategory GUID>{0CCE921B-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-9>
+  <row-10>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>IPsec Extended Mode</Subcategory>
+    <Subcategory GUID>{0CCE921A-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-10>
+  <row-11>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>IPsec Quick Mode</Subcategory>
+    <Subcategory GUID>{0CCE9219-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-11>
+  <row-12>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>IPsec Main Mode</Subcategory>
+    <Subcategory GUID>{0CCE9218-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-12>
+  <row-13>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Account Lockout</Subcategory>
+    <Subcategory GUID>{0CCE9217-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-13>
+  <row-14>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Logoff</Subcategory>
+    <Subcategory GUID>{0CCE9216-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>Success and Failure</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>3</Setting Value>
+  </row-14>
+  <row-15>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Logon</Subcategory>
+    <Subcategory GUID>{0CCE9215-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>Success and Failure</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>3</Setting Value>
+  </row-15>
+  <row-16>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Handle Manipulation</Subcategory>
+    <Subcategory GUID>{0CCE9223-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-16>
+  <row-17>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Central Policy Staging</Subcategory>
+    <Subcategory GUID>{0CCE9246-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-17>
+  <row-18>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Removable Storage</Subcategory>
+    <Subcategory GUID>{0CCE9245-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-18>
+  <row-19>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Detailed File Share</Subcategory>
+    <Subcategory GUID>{0CCE9244-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-19>
+  <row-20>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Other Object Access Events</Subcategory>
+    <Subcategory GUID>{0CCE9227-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-20>
+  <row-21>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Filtering Platform Connection</Subcategory>
+    <Subcategory GUID>{0CCE9226-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-21>
+  <row-22>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Filtering Platform Packet Drop</Subcategory>
+    <Subcategory GUID>{0CCE9225-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-22>
+  <row-23>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>File Share</Subcategory>
+    <Subcategory GUID>{0CCE9224-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-23>
+  <row-24>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Application Generated</Subcategory>
+    <Subcategory GUID>{0CCE9222-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-24>
+  <row-25>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Certification Services</Subcategory>
+    <Subcategory GUID>{0CCE9221-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-25>
+  <row-26>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>SAM</Subcategory>
+    <Subcategory GUID>{0CCE9220-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-26>
+  <row-27>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Kernel Object</Subcategory>
+    <Subcategory GUID>{0CCE921F-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-27>
+  <row-28>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Registry</Subcategory>
+    <Subcategory GUID>{0CCE921E-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-28>
+  <row-29>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>File System</Subcategory>
+    <Subcategory GUID>{0CCE921D-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-29>
+  <row-30>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Other Privilege Use Events</Subcategory>
+    <Subcategory GUID>{0CCE922A-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-30>
+  <row-31>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Non Sensitive Privilege Use</Subcategory>
+    <Subcategory GUID>{0CCE9229-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-31>
+  <row-32>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Sensitive Privilege Use</Subcategory>
+    <Subcategory GUID>{0CCE9228-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-32>
+  <row-33>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>RPC Events</Subcategory>
+    <Subcategory GUID>{0CCE922E-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-33>
+  <row-34>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Token Right Adjusted Events</Subcategory>
+    <Subcategory GUID>{0CCE924A-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-34>
+  <row-35>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Process Creation</Subcategory>
+    <Subcategory GUID>{0CCE922B-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>Success and Failure</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>3</Setting Value>
+  </row-35>
+  <row-36>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Process Termination</Subcategory>
+    <Subcategory GUID>{0CCE922C-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-36>
+  <row-37>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Plug and Play Events</Subcategory>
+    <Subcategory GUID>{0CCE9248-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-37>
+  <row-38>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>DPAPI Activity</Subcategory>
+    <Subcategory GUID>{0CCE922D-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-38>
+  <row-39>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Other Policy Change Events</Subcategory>
+    <Subcategory GUID>{0CCE9234-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-39>
+  <row-40>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Authentication Policy Change</Subcategory>
+    <Subcategory GUID>{0CCE9230-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-40>
+  <row-41>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Audit Policy Change</Subcategory>
+    <Subcategory GUID>{0CCE922F-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-41>
+  <row-42>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Filtering Platform Policy Change</Subcategory>
+    <Subcategory GUID>{0CCE9233-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-42>
+  <row-43>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Authorization Policy Change</Subcategory>
+    <Subcategory GUID>{0CCE9231-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-43>
+  <row-44>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>MPSSVC Rule-Level Policy Change</Subcategory>
+    <Subcategory GUID>{0CCE9232-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-44>
+  <row-45>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Other Account Management Events</Subcategory>
+    <Subcategory GUID>{0CCE923A-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-45>
+  <row-46>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Application Group Management</Subcategory>
+    <Subcategory GUID>{0CCE9239-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-46>
+  <row-47>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Distribution Group Management</Subcategory>
+    <Subcategory GUID>{0CCE9238-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-47>
+  <row-48>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Security Group Management</Subcategory>
+    <Subcategory GUID>{0CCE9237-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>Success and Failure</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>3</Setting Value>
+  </row-48>
+  <row-49>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Computer Account Management</Subcategory>
+    <Subcategory GUID>{0CCE9236-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-49>
+  <row-50>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>User Account Management</Subcategory>
+    <Subcategory GUID>{0CCE9235-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>Success and Failure</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>3</Setting Value>
+  </row-50>
+  <row-51>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Directory Service Replication</Subcategory>
+    <Subcategory GUID>{0CCE923D-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-51>
+  <row-52>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Directory Service Access</Subcategory>
+    <Subcategory GUID>{0CCE923B-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-52>
+  <row-53>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Detailed Directory Service Replication</Subcategory>
+    <Subcategory GUID>{0CCE923E-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-53>
+  <row-54>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Directory Service Changes</Subcategory>
+    <Subcategory GUID>{0CCE923C-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-54>
+  <row-55>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Other Account Logon Events</Subcategory>
+    <Subcategory GUID>{0CCE9241-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-55>
+  <row-56>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Kerberos Service Ticket Operations</Subcategory>
+    <Subcategory GUID>{0CCE9240-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>Success and Failure</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>3</Setting Value>
+  </row-56>
+  <row-57>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Credential Validation</Subcategory>
+    <Subcategory GUID>{0CCE923F-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>Success and Failure</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>3</Setting Value>
+  </row-57>
+  <row-58>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target>System</Policy Target>
+    <Subcategory>Kerberos Authentication Service</Subcategory>
+    <Subcategory GUID>{0CCE9242-69AE-11D9-BED3-505054503030}</Subcategory GUID>
+    <Inclusion Setting>No Auditing</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-58>
+  <row-59>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target></Policy Target>
+    <Subcategory>Option:CrashOnAuditFail</Subcategory>
+    <Subcategory GUID></Subcategory GUID>
+    <Inclusion Setting>Disabled</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-59>
+  <row-60>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target></Policy Target>
+    <Subcategory>Option:FullPrivilegeAuditing</Subcategory>
+    <Subcategory GUID></Subcategory GUID>
+    <Inclusion Setting>Disabled</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-60>
+  <row-61>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target></Policy Target>
+    <Subcategory>Option:AuditBaseObjects</Subcategory>
+    <Subcategory GUID></Subcategory GUID>
+    <Inclusion Setting>Disabled</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-61>
+  <row-62>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target></Policy Target>
+    <Subcategory>Option:AuditBaseDirectories</Subcategory>
+    <Subcategory GUID></Subcategory GUID>
+    <Inclusion Setting>Disabled</Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value>0</Setting Value>
+  </row-62>
+  <row-63>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target></Policy Target>
+    <Subcategory>FileGlobalSacl</Subcategory>
+    <Subcategory GUID></Subcategory GUID>
+    <Inclusion Setting></Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value></Setting Value>
+  </row-63>
+  <row-64>
+    <Machine Name>WINSERV-TARGET</Machine Name>
+    <Policy Target></Policy Target>
+    <Subcategory>RegistryGlobalSacl</Subcategory>
+    <Subcategory GUID></Subcategory GUID>
+    <Inclusion Setting></Inclusion Setting>
+    <Exclusion Setting></Exclusion Setting>
+    <Setting Value></Setting Value>
+  </row-64>
+</root>
