@@ -17,13 +17,14 @@ This project details the deployment, organizational structure, and security hard
 ## ⚙️ Key Implementation & Hardening Steps
 
 ### 1. Active Directory & Organizational Unit (OU) Tiering
-To prevent credential theft and administrative privilege escalation, the directory structure was designed using an enterprise Tiering Model (`ShieldCorp.local` domain):
+To prevent credential theft and administrative privilege escalation, the directory structure was designed using an enterprise Tiering Model (`Corp.Lab` domain):
 
-ShieldCorp-OU/
-- 📂 Admin Accounts  (Dedicated administrative accounts)
-- 📂 User Accounts   (Standard employee identities with non-privileged access)
-- 📂 Workstations    (Domain-joined client endpoints)
-- 📂 Servers         (Infrastructure and application servers)
+Corp.Lab/
+- 📂 Admin         (Privileged accounts separated from standard users)
+- 📂 Groups        (Security and distribution groups for access control)
+- 📂 Services      (Dedicated service accounts and non-human identities)
+- 📂 Users         (Standard corporate employee accounts)
+- 📂 Workstations   (Domain-joined client endpoints)
 
 
 ### 2. Group Policy Objects (GPOs) Deployed
