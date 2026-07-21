@@ -22,11 +22,11 @@ Instead of a single dense write-up, deep-dive implementation details, configurat
 
 | Project Module | Domain Focus | Key Technologies |
 | :--- | :--- | :--- |
-| [**01. Proxmox Cluster Deployment**](./projects/01-proxmox-cluster-setup/) | Virtualization & Compute | Proxmox VE, Multi-Node Bridging, Storage Integration |
-| [**02. Active Directory & GPO Hardening**](./projects/02-active-directory-hardening/) | IAM & Systems Admin | Windows Server 2022, Sysmon, Audit Policies |
-| [**03. Pi-hole Centralized DNS Filtering**](./projects/03-pihole-dns-sinkhole/) | Network Services | Raspberry Pi OS, DNS Sinkholing, AD Forwarding |
-| [**04. Wazuh SIEM & Telemetry Pipeline**](./projects/04-wazuh-siem-deployment/) | Security Engineering | Wazuh Manager/Agents, Syslog, JSON Log Parsing |
-| [**05. Attack Simulations & Detection**](./projects/05-attack-and-detection/) | Blue Teaming & Threat Hunting | Kali Linux, MITRE ATT&CK Mapping, Custom XML Rules |
+| [**01. Proxmox Cluster Deployment**](./Projects/01-proxmox-cluster-setup/) | Virtualization & Compute | Proxmox VE, Multi-Node Bridging, Storage Integration |
+| [**02. Active Directory & GPO Hardening**](./Projects/02-active-directory-hardening/) | IAM & Systems Admin | Windows Server 2022, Sysmon, Audit Policies |
+| [**03. Pi-hole Centralized DNS Filtering**](./Projects/03-pihole-dns-sinkhole/) | Network Services | Raspberry Pi OS, DNS Sinkholing, AD Forwarding |
+| [**04. Wazuh SIEM & Telemetry Pipeline**](./Projects/04-wazuh-siem-deployment/) | Security Engineering | Wazuh Manager/Agents, Syslog, JSON Log Parsing |
+| [**05. Attack Simulations & Detection**](./Projects/05-attack-and-detection/) | Blue Teaming & Threat Hunting | Kali Linux, MITRE ATT&CK Mapping, Custom XML Rules |
 
 ---
 
