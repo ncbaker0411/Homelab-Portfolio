@@ -67,4 +67,5 @@ Generated a test Security Event (4625 - Failed Logon) by attempting an invalid l
 * `ou-structure.png` - Active Directory Users and Computers (ADUC) hierarchy screenshot.
 * `GPO-Advanced-Audit-Policy.xml` - Exported Group Policy settings for security auditing.
 * `sysmon-config.xml` - Customized Sysmon configuration file applied across the domain.
-* `gpresult-output.txt` - Verification log showing active GPOs applied to client nodes.
+* `gpresult-output.txt` - Verification log showing active GPOs applied to client nodes
+* `telemetry-proof.png` - Sysmon Event ID 1 CommandLine capture verification.
