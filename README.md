@@ -8,7 +8,7 @@ Rather than isolated experiments, this lab operates as an integrated, production
 
 ## 🏛️ Network Topology
 
-![Homelab Architecture Diagram](./NetworkDiagram.jpg)
+![Homelab Architecture Diagram](./NetworkDiagram.png)
 
 * **Edge Gateway:** Isolated lab subnet routed through a GL.iNet firewall/gateway.
 * **Compute Cluster:** 3-node Proxmox VE cluster segregating defensive SIEM (Node 1), Active Directory environment (Node 2), and offensive testing tools (Node 3).
