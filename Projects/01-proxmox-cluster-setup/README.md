@@ -48,7 +48,7 @@ To handle log archiving, shared ISO storage, and VM backups:
 * **Nodes:** 3 Online (`pve-node1`, `pve-node2`, `pve-node3`)
 * **Quorum:** Healthy (3/3 votes)
 
-*(Place screenshot of your Proxmox Datacenter summary screen here showing all 3 green nodes online)*
+![Cluster Summary](./cluster-summary.png)
 
 ---
 
