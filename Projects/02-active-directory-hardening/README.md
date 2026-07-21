@@ -20,10 +20,10 @@ This project details the deployment, organizational structure, and security hard
 To prevent credential theft and administrative privilege escalation, the directory structure was designed using an enterprise Tiering Model (`ShieldCorp.local` domain):
 
 ShieldCorp-OU/
-├── 📂 Admin Accounts  (Dedicated administrative accounts)
-├── 📂 User Accounts   (Standard employee identities with non-privileged access)
-├── 📂 Workstations    (Domain-joined client endpoints)
-└── 📂 Servers         (Infrastructure and application servers)
+- 📂 Admin Accounts  (Dedicated administrative accounts)
+- 📂 User Accounts   (Standard employee identities with non-privileged access)
+- 📂 Workstations    (Domain-joined client endpoints)
+- 📂 Servers         (Infrastructure and application servers)
 
 
 ### 2. Group Policy Objects (GPOs) Deployed
