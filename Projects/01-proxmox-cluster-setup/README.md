@@ -25,3 +25,42 @@ The cluster consists of three physical **Dell OptiPlex 7090 Ultra** nodes manage
 2. Created a unified cluster on Node 1 via the Proxmox Datacenter web console:
    ```bash
    pvecm create proxmox-cluster
+3. Joined Nodes 2 and 3 using generated cluster join keys to establish quorum across the 3-node architecture.
+
+### 2. Network Bridging & Inter-VM Connectivity
+To allow seamless VM-to-VM communication across physical nodes without public routing issues:
+* Configured virtual bridge interfaces (`vmbr0`) on each Proxmox node, attached to the physical Gigabit NICs.
+* Connected all nodes to the **TP-Link 1Gbps Unmanaged Switch** behind the **GL.iNet Edge Gateway**.
+* Assigned static IP addresses to each Proxmox host to ensure stable management plane access.
+
+### 3. NAS Storage Integration
+To handle log archiving, shared ISO storage, and VM backups:
+* Configured NFS and SMB exports on the dedicated NAS PC (RAID 5 SSD array).
+* Added the storage target to the Proxmox Datacenter under **Datacenter -> Storage -> Add NFS**.
+* Mapped backup schedules (`vzdump`) to store nightly VM snapshots directly onto the NAS.
+
+---
+
+## 📊 Verification & Cluster Health
+
+### Proxmox Cluster Summary
+* **Cluster Name:** `proxmox-cluster`
+* **Nodes:** 3 Online (`pve-node1`, `pve-node2`, `pve-node3`)
+* **Quorum:** Healthy (3/3 votes)
+
+*(Place screenshot of your Proxmox Datacenter summary screen here showing all 3 green nodes online)*
+
+---
+
+## 💡 Lessons Learned & Technical Challenges
+
+* **Issue:** Initial inter-node communication latency caused intermittent quorum loss.
+* **Resolution:** Isolated cluster sync traffic and ensured static leases were mapped explicitly in the GL.iNet router for all node management interfaces.
+* **Key Takeaway:** Physical cluster design requires careful IP management and network planning before launching compute-heavy virtual workloads like Wazuh indexers.
+
+---
+
+## 📁 Included Artifacts in this Directory
+* `network-interfaces.cfg` - Sanitized `/etc/network/interfaces` configuration for the Proxmox bridges.
+* `cluster-status.txt` - Output log from `pvecm status` verifying quorum.
+* `cluster-summary.png` - Screenshot of the Proxmox cluster dashboard.
