@@ -53,18 +53,17 @@ PowerShell
 Get-Service -Name "Sysmon"
 Generated a test Security Event (4625 - Failed Logon) by attempting an invalid login to confirm local Event Viewer recording before shipping to Wazuh.
 
-💡 Lessons Learned & Technical Challenges
-Issue: Default Windows audit settings do not log detailed process execution command-line parameters required for threat hunting.
+---
 
-Resolution: Explicitly enabled Include command line in process creation events under Computer Configuration -> Administrative Templates -> System -> Audit Process Creation.
+##💡 Lessons Learned & Technical Challenges
+* **Issue:** Default Windows audit settings do not log detailed process execution command-line parameters required for threat hunting.
+* **Resolution:** Explicitly enabled Include command line in process creation events under Computer Configuration -> Administrative Templates -> System -> Audit Process Creation.
+* **Key Takeaway:** Enterprise identity security relies heavily on proactive auditing policies—if telemetry is not logged locally on the DC, the SIEM cannot detect credential abuse.
 
-Key Takeaway: Enterprise identity security relies heavily on proactive auditing policies—if telemetry is not logged locally on the DC, the SIEM cannot detect credential abuse.
+---
 
-📁 Included Artifacts in this Directory
-ou-structure.png - Active Directory Users and Computers (ADUC) hierarchy screenshot.
-
-GPO-Advanced-Audit-Policy.xml - Exported Group Policy settings for security auditing.
-
-sysmon-config.xml - Customized Sysmon configuration file applied across the domain.
-
-gpresult-output.txt - Verification log showing active GPOs applied to client nodes.
+##📁 Included Artifacts in this Directory
+* `ou-structure.png` - Active Directory Users and Computers (ADUC) hierarchy screenshot.
+* `GPO-Advanced-Audit-Policy.xml` - Exported Group Policy settings for security auditing.
+* `sysmon-config.xml` - Customized Sysmon configuration file applied across the domain.
+* `gpresult-output.txt` - Verification log showing active GPOs applied to client nodes.
