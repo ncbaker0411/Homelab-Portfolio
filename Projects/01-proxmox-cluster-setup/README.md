@@ -11,10 +11,10 @@ The cluster consists of three physical **Dell OptiPlex 7090 Ultra** nodes manage
 
 | Host / Node | Physical Specs | Dedicated Role | Guest VMs / Containers |
 | :--- | :--- | :--- | :--- |
-| **PVE Node 1** | Dell OptiPlex 7090 | Defensive Monitoring / SIEM | **Wazuh Manager** (Ubuntu Server / Elastic Indexer Stack) |
-| **PVE Node 2** | Dell OptiPlex 7090 | Enterprise Target Infrastructure | **Windows Server 2022** (Domain Controller) & **Windows 10 Pro** |
-| **PVE Node 3** | Dell OptiPlex 7090 | Offensive Security & Auditing | **Kali Linux** (Attack Simulations) |
-| **NAS Host** | Dedicated PC (6x 500GB RAID 5) | Shared Storage & Log Archives | OpenMediaVault / TrueNAS (NFS & SMB Shares) |
+| **alpha-node-01** | Dell OptiPlex 7090 | Defensive Monitoring / SIEM | **Wazuh Manager** (Ubuntu Server / Elastic Indexer Stack) |
+| **alpha-node-02** | Dell OptiPlex 7090 | Enterprise Target Infrastructure | **Windows Server 2022** (Domain Controller) & **Windows 10 Pro** |
+| **alpha-node-03** | Dell OptiPlex 7090 | Offensive Security & Auditing | **Kali Linux** (Attack Simulations) |
+| **pve-storage** | Dedicated PC (6x 500GB RAID 5) | Shared Storage & Log Archives | OpenMediaVault / TrueNAS (NFS & SMB Shares) |
 
 ---
 
@@ -44,8 +44,8 @@ To handle log archiving, shared ISO storage, and VM backups:
 ## 📊 Verification & Cluster Health
 
 ### Proxmox Cluster Summary
-* **Cluster Name:** `proxmox-cluster`
-* **Nodes:** 3 Online (`pve-node1`, `pve-node2`, `pve-node3`)
+* **Cluster Name:** `lab-cluster`
+* **Nodes:** 3 Online (`alpha-node-01`, `alpha-node-02`, `alpha-node-03`)
 * **Quorum:** Healthy (3/3 votes)
 
 ![Cluster Summary](./cluster-summary.png)
