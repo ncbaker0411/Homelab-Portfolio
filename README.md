@@ -1,84 +1,77 @@
-# Homelab-Portfolio
+# 🛡️ Enterprise Simulation & Security Operations Homelab
 
-This homelab is a self-hosted infrastructure environment designed to build and demonstrate practical skills in systems administration, networking, virtualization, and cybersecurity monitoring. It functions as both a learning platform and a production-style environment, with a focus on reliability, documentation, and iterative improvement rather than one-off experiments.
+A multi-node, cluster-based homelab environment engineered to simulate a small-scale enterprise network. This project demonstrates practical capabilities in **virtualization, systems administration, Active Directory management, DNS sinkholing, and defensive SIEM engineering**.
 
-The lab is designed to simulate a small-scale enterprise environment, incorporating centralized services, containerized workloads, network-level filtering, and log monitoring. This allows for hands-on experience with real-world scenarios such as service deployment, network troubleshooting, system hardening, and security event detection.
-
-The primary goal of this project is to apply and expand upon the knowledge gained through my CompTIA certifications in a practical, continuously evolving environment. It also serves as a professional portfolio to demonstrate technical capability, problem-solving, and documentation skills to potential employers.
+Rather than isolated experiments, this lab operates as an integrated, production-style ecosystem designed to capture endpoint and network telemetry, enforce least-privilege identity management, and monitor attack vectors mapped to the **MITRE ATT&CK framework**.
 
 ---
 
-## Skills Practiced by Certification
+## 🏛️ Network Topology
 
-### CompTIA A+
-- Foundational IT Operations
-- Hardware and system troubleshooting
-- OS installation and configuration
+![Homelab Architecture Diagram](./NetworkDiagram.jpg)
 
-### CompTIA Network+
-- Network architecture and design
-- DNS and network services
-- Switching, traffic flow, and segmentation
-- Availability and redundancy concepts
-- Cross-Node Virtual Networking
-- Centralized DNS Resolution
-
-### CompTIA Security+
-- Monitoring and detection
-- Least privilege and access control
-- Service isolation
-- Risk management and security best practices
-- SIEM Engineering
-- Advanced Telemetry Ingestion
-- Identity & Access Management (IAM)
+* **Edge Gateway:** Isolated lab subnet routed through a GL.iNet firewall/gateway.
+* **Compute Cluster:** 3-node Proxmox VE cluster segregating defensive SIEM (Node 1), Active Directory environment (Node 2), and offensive testing tools (Node 3).
+* **Storage & Edge Services:** Dedicated NAS for log archiving/backups alongside a Raspberry Pi hardware DNS sinkhole.
 
 ---
 
-## The Hardware
+## 📁 Project Modules & Detailed Documentation
 
-This project is built primarily using repurposed and recycled hardware to reduce e-waste while creating a functional and scalable lab environment. This approach reflects real-world constraints where maximizing available resources is often necessary.
+Instead of a single dense write-up, deep-dive implementation details, configuration files, and verification logs are organized into dedicated project modules:
 
-### Parts List
-
-| Part | Description | Notes |
-| --- | --- | --- |
-| TP-Link TL-SG108E | Unmanaged Switch | Provides basic network connectivity across the lab. Planned upgrade to a managed switch for VLAN and traffic segmentation. |
-| GL.iNet GL-1200 | Router | Acts as the primary lab gateway, separating the homelab network from the main household internet. Configured to handle routing, DHCP, and firewall rules to simulate a secure enterprise edge. |
-| Dell Optiplex 7060 Micro | Virtualization Host | Planned to run a hypervisor (Proxmox) for managing virtual machines and containerized services such as SIEM and infrastructure tools. |
-| Raspberry Pi 3 B+ (x1) | DNS Filtering Node | Currently running Pi-hole for centralized DNS filtering. Planned migration to a containerized deployment for improved management. |
-| Dell Optiplex 7090 Ultra (x3) | Kubernetes Cluster | Forms a cluster for experimenting with container orchestration and distributed workloads. |
-<!-- | 6x 500GB SSD | NAS Storage | Configured for RAID 5 to provide centralized storage for backups, shared data, and log ingestion for monitoring systems. | -->
+| Project Module | Domain Focus | Key Technologies |
+| :--- | :--- | :--- |
+| [**01. Proxmox Cluster Deployment**](./projects/01-proxmox-cluster-setup/) | Virtualization & Compute | Proxmox VE, Multi-Node Bridging, Storage Integration |
+| [**02. Active Directory & GPO Hardening**](./projects/02-active-directory-hardening/) | IAM & Systems Admin | Windows Server 2022, Sysmon, Audit Policies |
+| [**03. Pi-hole Centralized DNS Filtering**](./projects/03-pihole-dns-sinkhole/) | Network Services | Raspberry Pi OS, DNS Sinkholing, AD Forwarding |
+| [**04. Wazuh SIEM & Telemetry Pipeline**](./projects/04-wazuh-siem-deployment/) | Security Engineering | Wazuh Manager/Agents, Syslog, JSON Log Parsing |
+| [**05. Attack Simulations & Detection**](./projects/05-attack-and-detection/) | Blue Teaming & Threat Hunting | Kali Linux, MITRE ATT&CK Mapping, Custom XML Rules |
 
 ---
 
-## Design Philosophy
+## 📜 Technical Skills Mapped to Certifications
 
-- **Centralization:** Core services are consolidated to improve manageability and visibility
-- **Scalability:** Infrastructure is designed to grow (additional nodes, services, and segmentation)
-- **Resilience:** Redundancy and fault tolerance are considered where possible
-- **Security:** Emphasis on monitoring, logging, and service isolation
-- **Documentation:** Every major change and deployment is documented to reflect real-world IT practices
+### 🔹 CompTIA A+
+* **System Operations:** Hypervisor provisioning, hardware lifecycle management, and Linux/Windows OS deployment.
+* **Hardware & Storage:** RAID 5 array configuration, network-attached storage mounting, and hardware resource allocation.
 
----
+### 🔹 CompTIA Network+
+* **Architecture & Flow:** Subnet isolation, cross-node virtual switch creation, and edge gateway filtering via GL.iNet.
+* **Core Network Services:** Centralized DNS resolution architecture pairing Active Directory DNS with upstream Pi-hole sinkholing.
 
-## Planned / In-Progress Improvements
-
-- Migration to Proxmox-based virtualization cluster
-- Containerization of services using Docker
-- SIEM deployment (Wazuh) for centralized logging and monitoring
-- Expanded automation and scripting for deployment and maintenance
-- Update hardware to Managed Switch to work on VLAN configuation
-- Network segmentation via managed switch and VLAN configuration
+### 🔹 CompTIA Security+ & Blue Team Operations
+* **SIEM Engineering:** Deploying and managing Wazuh agents across heterogeneous endpoints (x86 Windows/Linux and ARM64 Linux).
+* **Telemetry & Hardening:** Advanced Windows Security Audit policy configuration via GPOs, Sysmon integration, and centralized log shipping.
+* **Identity & Access Management (IAM):** Active Directory OU hierarchy design, tiering administrative permissions, and enforcing least privilege.
 
 ---
 
-## Verification & Telemetry Collection
+## 🛠️ Hardware Stack & Workload Allocation
+
+| Component | Hardware | Workload / Function |
+| :--- | :--- | :--- |
+| **Edge Gateway** | GL.iNet GL-1200 | Primary lab router, DHCP server, and network firewall isolating lab traffic from home network. |
+| **Network Switch** | TP-Link TL-SG108E | 1 Gbps distribution switch connecting physical cluster nodes and storage devices. |
+| **Cluster Node 1** | Dell Optiplex 7090 | Proxmox Node hosting the **Wazuh SIEM Manager** (Elasticsearch/Indexer stack). |
+| **Cluster Node 2** | Dell Optiplex 7090 | Proxmox Node hosting **Windows Server 2022 (Domain Controller)** & **Windows 10 Enterprise Client**. |
+| **Cluster Node 3** | Dell Optiplex 7090 | Proxmox Node hosting **Kali Linux** for controlled attack simulations and auditing. |
+| **DNS Gateway** | Raspberry Pi 3 B+ | Hardware node running **Pi-hole** for network-wide DNS sinkholing and domain filtering. |
+| **Central NAS** | Dedicated PC | OpenMediaVault / TrueNAS running **RAID 5** (6x 500GB SSDs) for backups and log archiving. |
 
 ---
 
-## Active Attack Simulations (MITRE ATT&CK Mapping)
+## 🎯 Design Philosophy
+
+* **Centralization:** Single-pane-of-glass monitoring for all network and host events via Wazuh SIEM.
+* **Isolation & Containment:** Strict separation between defensive logging, target production environments, and offensive execution nodes.
+* **Data Fidelity:** Ingesting raw, high-value endpoint telemetry (Sysmon) rather than relying solely on default system logs.
+* **Reproducibility:** All configurations, rules, and scripts are stored as code within this repository for rapid deployment.
 
 ---
 
-## Network Diagram
+## 🚀 Future Roadmap
 
+* [ ] Upgrade unmanaged switch to a managed Layer 2 switch to implement 802.1Q VLAN network segmentation.
+* [ ] Integrate a SOAR platform (Shuffle) to automate active response actions (e.g., automated IP blocking upon detection).
+* [ ] Implement Docker-based containerized deployments for secondary infrastructure services.
