@@ -1,0 +1,20 @@
+<group name="custom_authentication_rules,">
+  <rule id="100002" level="10" frequency="5" timeframe="120">
+    <if_matched_sid>60110</if_matched_sid>
+    <description>Custom Alert: Multiple Failed Domain Authentication Attempts</description>
+    <mitre>
+      <id>T1110</id>
+    </mitre>
+  </rule>
+</group>
+
+<group name="custom_reconnaissance_rules,">
+  <rule id="100003" level="7">
+    <if_sid>61603</if_sid>
+    <field name="win.eventdata.commandLine" type="pcre2">whoami /priv|vssadmin delete shadows|net localgroup administrators</field>
+    <description>Custom Alert: Reconnaissance Command Executed on Host</description>
+    <mitre>
+      <id>T1087</id>
+    </mitre>
+  </rule>
+</group>

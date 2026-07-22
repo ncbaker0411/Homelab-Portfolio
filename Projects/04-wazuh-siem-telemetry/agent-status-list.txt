@@ -1,0 +1,11 @@
+Wazuh agent_control. List of available agents:
+   ID: 000, Name: alpha-node-01 (server), IP: 10.10.10.11, Active/Local
+   ID: 001, Name: Win10-Target, IP: 10.10.10.60, Active
+   ID: 003, Name: WinServer-Target, IP: 10.10.10.60, Active
+   ID: 004, Name: pi-hole, IP: 10.10.10.25, Active
+   
+List of agent status summary:
+   Active: 4
+   Disconnected: 0
+   Never connected: 0
+   Total: 4
