@@ -10,8 +10,8 @@ This project details the deployment and network integration of **Pi-hole** runni
 | Host / Device | Physical / Virtual Specs | Dedicated Role | Key Services / Configurations |
 | :--- | :--- | :--- | :--- |
 | **raspberrypi** | Raspberry Pi 3 Model B+ | Centralized DNS Sinkhole | Pi-hole, FTL DNS engine, Blocklists, Local DNS |
-| **alpha-node-02 (DC01)** | VM on Proxmox Node 2 | Domain Controller / Internal DNS | Active Directory DS, Windows DNS Server, Forwarders |
-| **alpha-node-02 (WKSTN01)** | VM on Proxmox Node 2 | Domain Client | Windows 10 Enterprise, DHCP Client |
+| **alpha-node-02 (WinServer-Target)** | VM on Proxmox Node 2 | Domain Controller / Internal DNS | Active Directory DS, Windows DNS Server, Forwarders |
+| **alpha-node-02 (Win10-Target)** | VM on Proxmox Node 2 | Domain Client | Windows 10 Enterprise, DHCP Client |
 
 ---
 
@@ -27,10 +27,10 @@ This project details the deployment and network integration of **Pi-hole** runni
 
 ### 2. Active Directory Integration & Conditional Forwarding
 To preserve internal domain lookup while securing external DNS queries:
-* **Active Directory DNS Forwarder:** Configured Windows Server DNS (`DC01`) to forward all non-local root queries directly to the Pi-hole instance (`10.10.10.15`).
+* **Active Directory DNS Forwarder:** Configured Windows Server DNS (`WinServer-Target`) to forward all non-local root queries directly to the Pi-hole instance (`10.10.10.15`).
 * **Pi-hole Conditional Forwarding:** Enabled Conditional Forwarding under **Settings -> DNS -> Conditional Forwarding**:
   * **Local Network CIDR:** `10.10.10.0/24`
-  * **Domain Name:** `ShieldCorp.local`
+  * **Domain Name:** `Corp.Lab`
   * **Domain Controller IP:** `10.10.10.10`
 * **Result:** Pi-hole query logs display resolved Active Directory computer hostnames rather than raw IP addresses.
 
