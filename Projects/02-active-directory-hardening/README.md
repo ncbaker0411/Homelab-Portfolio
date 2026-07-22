@@ -9,8 +9,8 @@ This project details the deployment, organizational structure, and security hard
 
 | Host Name | OS | Domain Role | Key Services / Components |
 | :--- | :--- | :--- | :--- |
-| **DC01** | Windows Server 2022 | Primary Domain Controller | AD DS, DNS, Group Policy (GPMC), Sysmon Agent |
-| **WKSTN01** | Windows 10 Enterprise | Domain-Joined Endpoint | Corporate User Workstation, Sysmon Agent, Local Audit Logging |
+| **WinServer-Target** | Windows Server 2022 | Primary Domain Controller | AD DS, DNS, Group Policy (GPMC), Sysmon Agent |
+| **Win10-Target** | Windows 10 Enterprise | Domain-Joined Endpoint | Corporate User Workstation, Sysmon Agent, Local Audit Logging |
 
 ---
 
@@ -45,7 +45,7 @@ Four custom GPOs were linked to enforce baseline security controls across the do
 
 To verify that GPOs applied correctly across endpoints:
 
-1. Ran Resultant Set of Policy on `WKSTN01`:
+1. Ran Resultant Set of Policy on `Win10-Target`:
    ```cmd
    gpresult /r /scope computer
 Verified Sysmon service state:
