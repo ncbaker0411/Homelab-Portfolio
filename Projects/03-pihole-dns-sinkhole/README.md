@@ -31,7 +31,7 @@ To preserve internal domain lookup while securing external DNS queries:
 * **Pi-hole Conditional Forwarding:** Enabled Conditional Forwarding under **Settings -> DNS -> Conditional Forwarding**:
   * **Local Network CIDR:** `10.10.10.0/24`
   * **Domain Name:** `Corp.Lab`
-  * **Domain Controller IP:** `10.10.10.10`
+  * **Domain Controller IP:** `10.10.10.50`
 * **Result:** Pi-hole query logs display resolved Active Directory computer hostnames rather than raw IP addresses.
 
 ### 3. Blocklist Ingestion & Custom DNS Records
