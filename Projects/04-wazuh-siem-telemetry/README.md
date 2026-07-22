@@ -12,8 +12,8 @@ The Wazuh SIEM pipeline ingests host and network telemetry across the following 
 | Host / Node | Physical / Virtual Specs | Dedicated Role | Guest Services / Telemetry Source |
 | :--- | :--- | :--- | :--- |
 | **alpha-node-01** | Dell OptiPlex 7090 Ultra | SIEM Manager & Indexer | **Wazuh Manager**, Elastic Indexer Stack, Wazuh Dashboard |
-| **alpha-node-02 (DC01)** | VM on Proxmox Node 2 | Target Domain Controller | Windows Server 2022, Security Audit Logs, Sysmon |
-| **alpha-node-02 (WKSTN01)** | VM on Proxmox Node 2 | Target Workstation | Windows 10 Enterprise, Security Events, Sysmon Execution Logs |
+| **alpha-node-02 (WinServer-Target)** | VM on Proxmox Node 2 | Target Domain Controller | Windows Server 2022, Security Audit Logs, Sysmon |
+| **alpha-node-02 (Win10-Target)** | VM on Proxmox Node 2 | Target Workstation | Windows 10 Enterprise, Security Events, Sysmon Execution Logs |
 | **alpha-node-03** | VM on Proxmox Node 3 | Offensive Security Node | Kali Linux, Security Audit Logs, Command History |
 
 ---
@@ -26,7 +26,7 @@ The Wazuh SIEM pipeline ingests host and network telemetry across the following 
 3. Applied TLS certificates, system memory map adjustments (`vm.max_map_count`), and secure management plane settings.
 
 ### 2. Multi-Platform Agent Ingestion Pipeline
-* **Windows Host Agents (`DC01`, `WKSTN01`):** Deployed the `wazuh-agent` service and configured `ossec.conf` to ingest critical log channels:
+* **Windows Host Agents (`WinServer-Target`, `Win10-Target`):** Deployed the `wazuh-agent` service and configured `ossec.conf` to ingest critical log channels:
   * Windows Security Event Log (`Event ID 4624`, `4625`, `4688`, `4720`)
   * Windows System & Application Logs
   * `Microsoft-Windows-Sysmon/Operational` (Process creation, network connections, file creation)
@@ -34,19 +34,19 @@ The Wazuh SIEM pipeline ingests host and network telemetry across the following 
 
 ### 3. Custom Decoders & Security Alerting Rules
 Configured custom detection logic within `/var/ossec/etc/rules/local_rules.xml` to flag malicious behavior:
-* **Rule ID 100001:** Triggers high-severity alert on repeated failed logon attempts against Active Directory accounts.
-* **Rule ID 100002:** Triggers alerts when administrative command-line tools or shadow copy deletion utilities (`vzdump`, `vssadmin`, `whoami /priv`) are executed via Sysmon Event ID 1.
+* **Rule ID 100002:** Triggers high-severity alert on repeated failed logon attempts against Active Directory accounts.
+* **Rule ID 100003:** Triggers alerts when administrative command-line tools or shadow copy deletion utilities (`vzdump`, `vssadmin`, `whoami /priv`) are executed via Sysmon Event ID 1.
 
 ---
 
 ## 📊 Verification & Threat Detection Testing
 
 ### Brute-Force & Account Lockout Detection
-* Simulated 10 failed logon attempts against `WKSTN01`.
+* Simulated 10 failed logon attempts against `Win10-Target`.
 * **Result:** Wazuh Dashboard instantly raised a Level 10 alert for `Windows: Multiple failed logons from same source`.
 
 ### Process Telemetry & Command Inspection
-* Executed system reconnaissance commands from `WKSTN01` Command Prompt.
+* Executed system reconnaissance commands from `Win10-Target` Command Prompt.
 * **Result:** Sysmon captured full command-line arguments and shipped them to Wazuh Manager, rendering process tree events in the dashboard.
 
 ![Wazuh Dashboard Overview](./wazuh-dashboard-overview.png)
