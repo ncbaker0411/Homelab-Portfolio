@@ -19,7 +19,7 @@ This project details the deployment and network integration of **Pi-hole** runni
 
 ### 1. Pi-hole Base Installation & Network Setup
 1. Installed **Raspberry Pi OS Lite** onto the Raspberry Pi 3 B+ hardware node.
-2. Configured a static IP address (`10.10.10.15`) to ensure consistent DNS routing across the lab.
+2. Configured a static IP address (`10.10.10.25`) to ensure consistent DNS routing across the lab.
 3. Deployed the Pi-hole automated installation script and configured administrative web controls:
    ```bash
    curl -sSL https://install.pi-hole.net | bash
