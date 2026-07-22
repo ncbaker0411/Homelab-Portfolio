@@ -52,9 +52,9 @@ To preserve internal domain lookup while securing external DNS queries:
 ### Internal Active Directory Domain Resolution
 * Executed `nslookup` against the Domain Controller from `WKSTN01`:
   ```cmd
-  nslookup dc01.ShieldCorp.local
+  nslookup winserver.local
   ```
-  * **Result:** Resolves directly to `10.10.10.10` via Active Directory DNS forwarding.
+  * **Result:** Resolves directly to `10.10.10.50` via Active Directory DNS forwarding.
 
 ![Pi-hole Dashboard](./pihole-dashboard.png)
 
