@@ -12,8 +12,8 @@ The attack simulations and threat hunting pipeline involve the following virtual
 | Host / Node | Physical / Virtual Specs | Dedicated Role | Target / Function |
 | :--- | :--- | :--- | :--- |
 | **alpha-node-03 (Kali-Attack)** | VM on Proxmox Node 3 | Offensive Security Node | Kali Linux, Atomic Red Team Framework, Nmap |
-| **alpha-node-02 (DC01)** | VM on Proxmox Node 2 | High-Value Target | Windows Server 2022 (Domain Controller), Sysmon, Wazuh Agent |
-| **alpha-node-02 (WKSTN01)** | VM on Proxmox Node 2 | Endpoint Target | Windows 10 Enterprise, Sysmon, Local Security Audit Policies |
+| **alpha-node-02 (WinServer-Target)** | VM on Proxmox Node 2 | High-Value Target | Windows Server 2022 (Domain Controller), Sysmon, Wazuh Agent |
+| **alpha-node-02 (Win10-Target)** | VM on Proxmox Node 2 | Endpoint Target | Windows 10 Enterprise, Sysmon, Local Security Audit Policies |
 | **alpha-node-01 (Wazuh-SIEM)** | VM on Proxmox Node 1 | Defense & Telemetry Node | Wazuh Manager, Elastic Indexer Stack, Alerting Engine |
 
 ---
@@ -27,7 +27,7 @@ The attack simulations and threat hunting pipeline involve the following virtual
    Install-Module -Name Invoke-AtomicRedTeam -Scope CurrentUser
    IWR https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/install-atomicredteam.ps1 -UseBasicParsing | IEX
    ```
-3. Configured API connectivity to safely trigger controlled atomic tests against target Windows hosts (`WKSTN01`, `DC01`).
+3. Configured API connectivity to safely trigger controlled atomic tests against target Windows hosts (`Win10-Target`, `WinServer-Target`).
 
 ### 2. MITRE ATT&CK Technique Execution
 Executed targeted atomic tests mapped to core threat actor Tactics, Techniques, and Procedures (TTPs):
@@ -44,7 +44,7 @@ Executed targeted atomic tests mapped to core threat actor Tactics, Techniques, 
 ## 📊 Verification & Threat Detection Testing
 
 ### Technique Simulation: T1087.002 - Domain Account Discovery
-* Executed domain enumeration from `WKSTN01`:
+* Executed domain enumeration from `Win10-Target`:
   ```cmd
   net group "Domain Admins" /domain
   ```
