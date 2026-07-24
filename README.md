@@ -40,7 +40,7 @@ Instead of a single dense write-up, deep-dive implementation details, configurat
 * **Architecture & Flow:** Subnet isolation, cross-node virtual switch creation, and edge gateway filtering via GL.iNet.
 * **Core Network Services:** Centralized DNS resolution architecture pairing Active Directory DNS with upstream Pi-hole sinkholing.
 
-### 🔹 CompTIA Security+ & Blue Team Operations
+### 🔹 CompTIA Security+
 * **SIEM Engineering:** Deploying and managing Wazuh agents across heterogeneous endpoints (x86 Windows/Linux and ARM64 Linux).
 * **Telemetry & Hardening:** Advanced Windows Security Audit policy configuration via GPOs, Sysmon integration, and centralized log shipping.
 * **Identity & Access Management (IAM):** Active Directory OU hierarchy design, tiering administrative permissions, and enforcing least privilege.
